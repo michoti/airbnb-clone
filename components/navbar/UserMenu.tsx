@@ -6,7 +6,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/navigation";
 
 // import useLoginModal from "@/app/hooks/useLoginModal";
-// import useRegisterModal from "@/app/hooks/useRegisterModal";
+import useRegisterModal from "@/app/hooks/useRegisterModal";
 // import useRentModal from "@/app/hooks/useRentModal";
 // import { SafeUser } from "@/app/types";
 
@@ -24,7 +24,7 @@ const UserMenu = () => {
   const router = useRouter();
 
   // const loginModal = useLoginModal();
-  // const registerModal = useRegisterModal();
+  const registerModal = useRegisterModal();
   // const rentModal = useRentModal();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -102,8 +102,8 @@ const UserMenu = () => {
             text-sm
           "
         >
-          {/* <div className="flex flex-col cursor-pointer">
-            {currentUser ? (
+          <div className="flex flex-col cursor-pointer">
+            {/* {currentUser ? (
               <>
                 <MenuItem 
                   label="My trips" 
@@ -131,19 +131,20 @@ const UserMenu = () => {
                   onClick={() => signOut()}
                 />
               </>
-            ) : (
+            ) : ( */}
               <>
                 <MenuItem 
                   label="Login" 
-                  onClick={loginModal.onOpen}
+                  // onClick={loginModal.onOpen}
+                  onClick={() => {}}
                 />
                 <MenuItem 
                   label="Sign up" 
                   onClick={registerModal.onOpen}
                 />
               </>
-            )}
-          </div> */}
+            {/* )} */}
+          </div>
         </div>
       )}
     </div>
