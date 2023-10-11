@@ -81,7 +81,7 @@ const Search = () => {
           "
         >
           {/* {locationLabel} */}
-          orange
+          anywhere
         </div>
         <div 
           className="
@@ -96,7 +96,7 @@ const Search = () => {
           "
         >
           {/* {durationLabel} */}
-          mango
+          any week
         </div>
         <div 
           className="
@@ -111,7 +111,7 @@ const Search = () => {
           "
         >
           {/* <div className="hidden sm:block">{guestLabel}</div> */}
-          <div className="hidden sm:block">apple</div>
+          <div className="hidden sm:block">add guests</div>
           <div 
             className="
               p-2 
