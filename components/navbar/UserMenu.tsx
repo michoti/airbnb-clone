@@ -120,8 +120,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 />
                 <MenuItem 
                   label="Airbnb your home" 
-                  // onClick={rentModal.onOpen}
-                  onClick={() => {}}
+                  onClick={rentModal.onOpen}
                 />
                 <hr />
                 <MenuItem 
